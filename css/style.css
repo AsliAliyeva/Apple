@@ -1,0 +1,807 @@
+:root {    --mavi : #0d83fa }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {    list-style-type: none;}
+a {text-decoration: none!important;}
+.container {margin: auto;}
+.bgag { background-color: #fff;}
+.bgmilk { background-color: #f2f2f2;}
+.txtag { color: #fff;}
+.txtblack { color: #000;}
+.txtcenter {text-align: center;}
+.pb-20 {padding-bottom: 20px;}
+
+#hdr { 
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+nav * i {
+    display: inline-block;
+    font-size: 1.3em;
+    color: #000;
+}
+input[type="checkbox"]:checked~ #menu { right: 0; }
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+h1 {
+    padding: 30px 0;
+    font-size: 2em;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#inp {display: none;}
+#icon { 
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 3px 0;
+}
+#icon2 {display: flex; justify-content: space-between; width: 60%;}
+#menu{
+    display: block;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .3s;
+    height: 100vh;
+}
+#menu label { display: block; margin: 10px 10px 0 0;}
+#menu label i { display: flex; justify-content: flex-end;}
+#menu li { text-align: center; padding: 10px 0;}
+#menu li a{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#slider { 
+    display: flex;
+    overflow-x: auto;
+}
+#slider::-webkit-scrollbar {display: none;}
+#slider * img {
+    width: 50px;
+    height: 50px;
+}
+#slider div { 
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#slider * p {
+    color: #1D1D1FFF;
+    font-size: .75em;
+    font-weight: 500;
+    margin: 5px 0;
+    width: 80px;
+    text-align: center;
+}
+#shop p {
+    color: #6f6f6f;
+    font-size: .75em;
+    padding: 10px;
+}
+#shop a {    font-size: .75em;}
+
+.logo{display: flex; align-items: center; width: 50px; justify-content: center;}
+.logo i { font-size: 1.6em;}
+.new {
+    color: #bf4800;
+    margin-bottom: 10px;
+}
+.lnk {
+    display: inline-block;
+    font-size: 1.1875em;
+    color: var(--mavi);
+    padding-bottom: 10px;
+}
+
+#titanium {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+#t1 { height: 45px ; margin: 15px auto; max-width: 100%;}
+#t2 {height: 50vh; overflow: hidden;}
+#titanium h6 {
+    color: #8B887EFF;
+    font-size: 1.1875em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#titanp {
+    color: #f5f5f7;
+    font-size: 1em;
+    padding: 15px;
+}
+.btn {
+    background-color: var(--mavi)!important;
+    color: white!important;
+    font-size: 1em!important;
+    padding: 5px 15px!important;
+    border-radius: 20px !important;
+    border:0 !important;
+    margin: 15px!important;
+}
+#titanium a { padding: 20px 0;}
+#newphoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+#newphoria img {
+    width: 100%;
+    padding: 20px 0;
+}
+#newphoria h6 {
+    font-weight: 500;
+    font-size: calc(1.3rem + .6vw);
+    padding-bottom: 10px;
+}
+#newphoria p:nth-of-type(2) { padding: 20px 0;}
+
+#love {background-color: #fbfbfd; padding-bottom: 20px ;}
+#loveimg {background: url('../img/lovebg.jpeg')  center/contain no-repeat; height: 50vh; }
+#lovediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#lovediv p:nth-of-type(1) {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px;
+}
+#lovediv h2 {
+    color: #1e3791;
+    font-weight: 700;
+    font-size: 2em;
+}
+#lovediv h2:nth-of-type(2) {padding-bottom: 10px;}
+
+#film {
+    text-align: center;
+    padding-top: 50px;
+}
+#filmimg {padding-top: 20px;}
+#filmimg img  {width: 100%;}
+#filmdiv h2 {
+    font-weight: 600;
+    font-size: 2em;
+    padding-top: 10px;
+}
+#filmdiv h2:nth-of-type(2) {padding-bottom: 20px;}
+
+.img1 img , .img2 img {width: 100%; padding: 10px 0; }
+.img1 , .img2 {
+    width: 125px; 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+}
+.img2 {height: 50px;}
+.img2 img {margin: 2px auto;}
+.mb-30 {margin-bottom: 30px;}
+.mb-10 {margin-bottom: 10px;}
+.info {padding: 0 20px ;}
+.info img { width: 40px;}
+.info p { padding: 5px 0; font-size: .8em;}
+.info h6 {
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.info h5 {
+    color: #1d1d1f;
+    padding: 5px 0 20px 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+.info p:nth-of-type(2) { font-size: .8em;}
+.info button { margin: 10px auto; }
+.info a { font-size: 1rem;}
+.info hr { 
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 100%;
+}
+.info h4 {
+    font-size: calc(1.275rem + .3vw);
+    font-weight: 500;
+    padding: 10px 0;
+}
+.phonediv .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.phone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.phonediv {    margin: auto;}
+
+#color2 img { width: 70%; padding: 0; }
+#color3 img {width: 75%;}
+
+#compare {margin-bottom: 10px;}
+#compare div a { font-size: 1.1875em;}
+
+#card3img1 {background: url('../img/phone2.jpg') center/contain no-repeat;  height: 30vh; width: 100%;}
+#card3img2 {background: url('../img/emojiboom.jpg') center/contain no-repeat;  height: 20vh; width: 100%;}
+#card3img3 {background: url('../img/applecard.jpg') center/contain no-repeat;  height: 30vh; width: 100%;}
+
+.card3 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+}
+.card3 h4 {
+    padding: 30px;
+    font-size: 1.5em;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.card3 a {
+    padding: 20px 0;
+    font-size: .9em;
+}
+#ways h2 {
+    font-weight: 500;
+    font-size: 2em;
+    padding: 30px 0;
+}
+#emojicard p {
+    color: #6e6e73;
+    margin-bottom: 1rem;
+}
+#applecard p {margin-bottom: 1rem;}
+
+#why {width: 80%; margin: auto;}
+#whyimg img {width: 100%;}
+#whydiv h2 {
+    padding: 30px;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: .5rem;
+}
+#whydiv p {
+    padding: 0 30px;
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+#whydiv .lnk {    margin-bottom: 3rem}
+
+#accessories {margin: auto;}
+#accessories h2 {
+    font-weight: 600;
+    padding: 30px 0;
+    font-size: 2em;
+    margin-bottom: .5rem;
+    width: 30%;
+    margin: auto;
+}
+#accessories * p {font-size: 1.1em; padding: 5px 30px;}
+#mag , #airtag , #magic { width: 75%; margin: 20px auto;}
+#magdiv p {
+    font-size: 1.1em;
+    padding: 5px 30px;
+}
+#magdiv .lnk , #magdiv p {margin-bottom: 3rem}
+#magimg img {width: 100%;}
+#magimg {width: 30%; margin: auto;}
+
+#airtaglink { padding: 20px 0;}
+#airtagimg img {width: 100%;}
+#airtaglink a { margin: 5px;}
+
+#magicimg {
+    background: url('../img/magic.jpg') 100% -1px/contain no-repeat; 
+    height: 20vh; 
+}
+
+.minilogo {width: 30%; margin: auto;}
+.minilogo h5 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+.minilogo a{margin: 10px 0;}
+
+#every h2 { padding-bottom: 20px;}
+#ios {
+    width: 70%;
+    margin: auto;
+}
+#ios17 img {width: 100%;}
+#iosdiv h2 {
+    padding-bottom: .5rem;
+    padding-top: 3rem;
+}
+#iosdiv .lnk {padding-top: 20px;}
+#ios17 {
+    background: url('../img/ios17.jpg') center/cover;
+    height: 50vh;
+}
+
+#switch , #privacy{width: 70%; margin: 30px auto; padding: 30px 0; height: 70vh;}
+#switchimg {
+    background: url('../img/switch.jpg') 50% 50px /cover no-repeat;
+    height: 40vh;
+}
+#switchdiv h2 {
+    padding: 10px 0;
+    width: 80%;
+    margin: auto;
+}
+
+
+#privacyimg {
+    background: url('../img/privacy.jpg') 50% -100px / cover no-repeat;
+    height: 50vh;
+}
+#privacydiv h2 {width: 50%; margin: 10px auto;}
+
+#get h2 {
+    padding: 30px 0;
+    font-size: 2em;
+    font-weight: 500;
+}
+#one {width: 70%; margin: auto;}
+#oneimg1 { 
+    background: url('../img/one.jpg') center/contain no-repeat;
+    width: 90px;
+    height: 30px;
+    padding-top: 50px;
+    margin: auto;
+}
+#onediv p {
+    font-size: 1.4em;
+    padding: 20px 10px ;
+}
+.twolink a {
+    font-size: 1.1875em;
+    color: #2997ff;
+    margin-bottom: 3rem
+}
+#oneimg2 {
+    background: url('../img/icon6.jpg') center/contain no-repeat;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.blackcards {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #000;
+}
+.basliq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    margin-bottom: 10px;
+}
+.basliq i { font-size: 25px;}
+.blackdiv p{padding: 10px 30px; width: 50%; margin: auto;}
+.blackdiv .twolink a { font-size: .9em;}
+#tvimg {
+    background: url(../img/tvbg.png) center/cover;
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+}
+#musicimg {
+    background: url(../img/musicbg.jpg) center/cover;
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+}
+
+.transcards {
+    background-color: rgba(255, 255, 255 , 0.5);
+    width: 70%;
+    margin: 20px auto;
+}
+.bslq h2 {
+    font-weight: 700;
+    font-size: 2.8em;
+}
+.transdiv p {width: 50%; margin: 20px auto;}
+.transdiv .basliq i { font-size: 40px;}
+#fitnessimg {
+    background: url(../img/fitness.jpg) 50% -100px/cover no-repeat;
+    height: 50vh;
+}
+#arcadeimg {
+    background: url('../img/arcade.png') 100% 150px / contain no-repeat;
+    height: 50vh;
+}
+#newsimg {
+    background: url('../img/news.jpg') 50% -130px / cover no-repeat;
+    height: 50vh;
+} 
+#giftimg {
+    background: url('../img/gift.jpg') center / cover no-repeat;
+    height: 40vh;
+}
+
+#research {
+    background-color: rgba(255, 255, 255 , 0.5);
+    margin: 20px auto;
+    width: 70%;
+}
+#researchdiv h2 {
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+}
+#researchdiv p { padding: 10px 0;}
+#researchimg {
+    background: url('../img/researchmob.jpg') center/contain no-repeat;
+    height: 30vh;
+}
+#txt {width: 70%; margin: auto; padding: 20px 0;}
+#txt p , #txt li {
+    font-size: .9em;
+    color: #0000007a;
+}
+#txt p {margin-bottom: 1rem;}
+#txt hr { margin: 20px auto;}
+ol {padding-bottom: 30px;}
+ol li {padding: 5px 20px;}
+
+#bootstrap {width: 80%; margin: auto;}
+#fdiv1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    margin-bottom: 20px;
+} 
+#fdiv1 a {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+#fdiv1 p { margin: 0; font-size: .8rem;}
+#bootstrap button , #bootstrap li , #fdiv2 p{
+    font-size: .8rem;
+    color: #000000bd;
+}
+#fdiv2 {width: 80%; margin: auto;}
+#fdiv2 a {font-size: .8rem;}
+
+#ftr {display: none;}
+
+
+
+@media only screen and (min-width: 768px) {
+    .container { max-width: 1140px;}
+    #hdr { flex-wrap: wrap; width: 80%; margin: auto;}
+    nav * i {font-size: 1.1em; margin: auto; padding: 0;}
+   #foryou h1 {
+        font-size: 3em;
+        font-weight: bold;
+        padding: 30px 0
+    }
+    #lovediv h2 , h2 {font-size: 2.8rem; font-weight: bold;}
+    .logo i {font-size: 1.4em; width: 5%;}
+    .lnk , #titanp , #newphoria p:nth-of-type(2) , #lovediv p:nth-of-type(2) { font-size: 1.3em;}
+
+    #hamburger {
+        display: flex;
+        justify-content: space-between ;
+        order: -1;
+    }
+    #hamburger label {display: none;}
+    #shop a { font-size: 1.3em;}
+    #icon2 { 
+        display: flex; 
+        width: 10%; 
+        justify-content: space-around; 
+        align-items: center;
+    }
+    #icon {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    #icon i {  margin: 10px 5px; }
+    #menu { 
+        display: flex;
+        position: initial;
+        height: initial;
+        background-color: transparent;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu li a {
+        font-size:  .8em;
+        font-weight: bold;
+        padding:  0px 13px;
+    }
+    
+    #slider {justify-content: center;}
+    #slider div {margin: 10px 5px; }
+
+    #shop p {
+        font-size: 1.3em;
+        color: #1d1d1f;
+        padding-top: 20px;
+    }
+
+    #titanium {padding-top: 30px;}
+    #t2 {transform: rotate(-90deg)}
+
+    #newphoria h2 {
+        font-weight: bold;
+        font-size: 2.8rem;
+    }
+    #love {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #loveimg ,  #lovediv {width: 50%; }
+    #loveimg {height: 100vh;}
+
+    #film {color: #fff;}
+    #filmimg {display: none;}
+    #film {
+        background: url('../img/filmbg.jpeg') center/cover;
+        height: 100vh;
+        border-radius: 30px;
+        margin: 50px 20px;
+        position: relative;
+    }
+    #filmdiv {
+        text-align: left;
+        position: absolute;
+        left: 15%;
+        top: 40%;
+    }
+    #filmdiv h2 {
+        font-size: 2.4em;
+        font-weight: 500;
+    }
+    #filmdiv p {font-size: 1.5rem;}
+    #filmdiv a{
+        color: black;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    #fnt {display: none;}
+
+    .phonediv {width: 25%;}
+    .img1 img{ width: 180px; height: 250px;}
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #ways h2 {
+        font-weight: 500;
+        font-size: 3em
+    }
+    .card3 {
+        width: 33%;
+        height: 70vh;
+        margin: 10px 5px;
+    }
+    .card3 h4 {
+        font-weight: bold;
+        padding: 30px;
+        font-size: 1.5em;
+    }
+    .card3 a {
+        font-size: 1.1em;
+        padding: 20px 0;
+    }
+
+    #whyimg {display: none;}
+    #why {
+        background: url(../img/whyapple.jpg) center/cover no-repeat; 
+        background-color: #fff;
+        background-position-x: 50%;
+        background-position-y: 200px ;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+    #whydiv {
+        position: absolute;
+        width: 50%;
+        inset: 0;
+        margin: auto;
+    }
+    #whydiv h2 {
+        padding:30px;
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin-bottom: .5rem;
+    }
+
+    #accessories h2 {
+        font-weight: 600;
+        font-size: 3em;
+        padding: 30px 0;
+    }
+    #mag {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+
+    }
+    #magdiv {  width: 50%; padding: 0 100px; }
+    #magdiv h2 {width: 100%;}
+    #magimg {width: 40%; text-align: center;}
+    #airtag {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #airtagimg {
+        width: 50%;
+        order:-1;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+    #airtagimg img {height: 60vh;}
+    #airtagdiv {padding:0 50px;}
+
+    #magic {  width: 100%;   }
+    #magicdiv h2{width: 100% ;}
+    #magicimg {
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+    }
+
+    #logos {
+        display: flex;
+        padding: 40px 0;
+    }
+    #every h2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    #ios {
+        width: 100%;
+        background: url('../img/ios17.jpg') 40% -105px/cover no-repeat;
+        height: 80vh;
+        margin: 20px 0;
+    }
+    #ios17 {display: none;}
+    #iosdiv p {font-size: 1.2em;}
+    .twocards {
+        display: flex;
+        flex-direction: row;
+    }
+    #switch , #privacy {width: 48%; height: 80vh; padding-bottom: 0;}
+    #switchimg {height: 50vh; }
+    #get h2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    #switch h2 , #privacy h2 { font-weight: bold; font-size: 2.3rem;}
+    #one { 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    #oneimg2 {
+        order: -1;
+        height: 60vh;
+        width: 50%;
+        margin: 20vh;
+        margin-right: 0;
+    }
+    #oneimg1 {        
+        height: 40%;
+        width: 40%;
+    }
+    #onedv {margin: auto; width: 50%; padding: 0 20px;}
+
+    .basliq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .basliq h2 { margin: 0;}
+    .basliq i {font-size: 45px; margin-right: 2px;}
+    .blackcards , .transcards {width: 48%;}
+    .bslq h2 {
+        font-weight: 700;
+        font-size: 2.8rem;
+    }
+
+    #research {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    #researchdiv {width: 50%; display: flex;flex-direction: column; align-items: center;}
+    #researchdiv p {width: 50%;}
+    #researchdiv h2  { margin: 0; font-weight: bold;font-size: 2.8rem}
+    #researchimg {
+        background: url('../img/research.jpg') center/contain no-repeat;
+        height: 50vh;
+        width: 50%;
+    }
+    #txt { width: 60%;}
+    #bootstrap {display: none;}
+
+    #fdiv1 {width: 80%; margin: 10px auto;}
+    #ftr {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 70%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    #ftr h6 { font-size: 1rem}
+    #ftr a {
+        font-size: .7em;
+        font-weight: 400;
+        color: #000000b8;
+    }
+    #ftr div ul li , #ftr div ul a {text-align: left;}
+    #ftr h6 { text-align: center;}
+    #fdiv3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
